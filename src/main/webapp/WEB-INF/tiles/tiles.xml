@@ -5,17 +5,12 @@
  
 <tiles-definitions>
     <!-- (1) 레이아웃을 적용하지않는화면-->    
-    <definition name="base" template="/WEB-INF/views/layout.jsp">
-    	<put-attribute name="css" value="/WEB-INF/views/fragments/css.jsp" />
-        <put-attribute name="nav" value="/WEB-INF/views/fragments/nav.jsp" />
-        <put-attribute name="body" value="/WEB-INF/views/fragments/header.jsp" />       
-        <put-attribute name="footer" value="/WEB-INF/views/fragments/footer.jsp" />
-        <put-attribute name="js" value="/WEB-INF/views/fragments/js.jsp" />
-    </definition>
-    
-    <!-- base를 상속받은 base/index -->
-    <definition name="base/index" extends="base">
-        <put-attribute name="body" value="/WEB-INF/views/index.jsp" />
+    <definition name="base" template="/WEB-INF/tiles/layout.jsp">
+    	<put-attribute name="css" value="/WEB-INF/views/fragments/css.jsp" cascade="true" />
+        <put-attribute name="nav" value="/WEB-INF/views/fragments/nav.jsp" cascade="true" />
+        <put-attribute name="body" value="/WEB-INF/views/fragments/body.jsp" cascade="true" />       
+        <put-attribute name="footer" value="/WEB-INF/views/fragments/footer.jsp" cascade="true"/>
+        <put-attribute name="js" value="/WEB-INF/views/fragments/js.jsp" cascade="true" />
     </definition>
     
     <!-- 동적 매핑. 만약 /user/login의 경로라면 /WEB-INF/views/user/login.jsp 뷰를 가져온다. -->

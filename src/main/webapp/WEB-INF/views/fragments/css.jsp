@@ -11,7 +11,7 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="/mainresources/fonts/elegant-font/html-css/style.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="w/vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="/mainresources/vendor/animate/animate.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="/mainresources/vendor/css-hamburgers/hamburgers.min.css">
 <!--===============================================================================================-->
@@ -20,6 +20,7 @@
 	<link rel="stylesheet" type="text/css" href="/mainresources/vendor/select2/select2.min.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="/mainresources/vendor/slick/slick.css">
+		<link rel="stylesheet" type="text/css" href="/mainresources/vendor/daterangepicker/daterangepicker.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="/mainresources/css/util.css">
 	<link rel="stylesheet" type="text/css" href="/mainresources/css/main.css">
